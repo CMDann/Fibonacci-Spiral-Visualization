@@ -55,7 +55,7 @@ Make sure you have a modern web browser (Chrome, Firefox, Edge, etc.) that suppo
 
 Here's a screenshot of the Fibonacci spiral visualization:
 
-![Fibonacci Spiral Screenshot](path/to/your/screenshot.png)
+![Fibonacci Spiral Screenshot](img/image.png)
 
 ## License
 
