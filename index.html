@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Spiral Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel for explanation -->
+        <div class="panel left-panel">
+            <h2>What is the Fibonacci Spiral?</h2>
+            <p>
+                The Fibonacci spiral is a pattern that approximates the golden spiral, and it is created by drawing arcs connecting the opposite corners of squares in the Fibonacci tiling. 
+                It is named after the Fibonacci sequence, where each number is the sum of the two preceding ones.
+            </p>
+            <h3>Applications</h3>
+            <ul>
+                <li>Architecture</li>
+                <li>Nature (shells, flowers)</li>
+                <li>Art and Design</li>
+                <li>Stock Market Analysis</li>
+            </ul>
+        </div>
+
+        <!-- Center canvas for drawing the spiral -->
+        <div class="canvas-container">
+            <canvas id="fibCanvas"></canvas>
+        </div>
+
+        <!-- Right Panel for math explanation and algorithm control -->
+        <div class="panel right-panel">
+            <h2>Mathematics of the Fibonacci Spiral</h2>
+            <p>
+                The Fibonacci spiral is based on the Fibonacci sequence. It uses the golden ratio (φ = 1.618...) to grow the spiral with each segment.
+                The length of each segment grows in proportion to the golden ratio.
+            </p>
+            <h3>Adjust the Parameters</h3>
+            <label for="scale">Scale: </label>
+            <input type="number" id="scale" value="10" min="1">
+            <br><br>
+
+            <label for="turns">Number of Turns: </label>
+            <input type="number" id="turns" value="10" min="1">
+            <br><br>
+
+            <label for="thickness">Line Thickness: </label>
+            <input type="range" id="thickness" min="1" max="10" value="2">
+            <br><br>
+
+            <button id="restart">Restart Visualization</button>
+            <br><br>
+            <button id="saveImage">Save as PNG</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
